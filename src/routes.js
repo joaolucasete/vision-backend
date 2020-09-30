@@ -45,4 +45,8 @@ routes.get('/worker/:id', celebrate({
   })
 }), WorkersController.getInfo)
 
+routes.get('hello', (req, res) => {
+  return res.send("Hello World")
+})
+
 module.exports = routes
