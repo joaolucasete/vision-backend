@@ -45,7 +45,7 @@ routes.get('/worker/:id', celebrate({
   })
 }), WorkersController.getInfo)
 
-routes.get('hello', (req, res) => {
+routes.get('/', (req, res) => {
   return res.send("Hello World")
 })
 
